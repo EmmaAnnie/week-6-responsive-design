@@ -11,7 +11,16 @@
     <h2>Portrait and Landscape</h2>
     <picture>
         <source media="(orientation: Portrait)" srcset="sample-images/calgary-tower-portrait.webp">
-        <img src="sample-images/calgary-tower-landscape1.webp" alt="A photo of the Calgary Tower from the Street below.">
+        <img src="sample-images/calgary-tower-landscape1.webp" alt="A photo of the Calgary Tower from the Street below."
+        loading="lazy">
+    </picture>
+
+    <h2>Desktop First</h2>
+    <picture>
+        <source media="(max-width: 450px)" srcset="sample-images/small.png">
+        <source media="(max-width: 650px)" srcset="sample-images/medium.png">
+        <img src="sample-images/large.png" alt="Banner Graphic for the website." 
+        loading="lazy">
     </picture>
 </body>
 </html>
